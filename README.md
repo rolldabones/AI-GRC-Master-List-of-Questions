@@ -6,6 +6,7 @@ Master List of Minimum Questions for AI GRC Copilot (30 Canonical Artifacts)
 This is a Master List of Minimum Questions that, if answered, enables the AI GRC Copilot custom GPT to generate the full set of 30 canonical AI GRC artifacts (policy, charters, registers, SOPs, protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
 
 Design goals
+
 	•	Binary yes/no wherever possible
 	•	Only a small number of non-binary fields for names, lists, and numeric thresholds
 	•	Questions are structured so a “No” often removes an entire section of multiple documents
@@ -15,6 +16,7 @@ If you cannot answer something, you can respond “Unknown/TBD” and the AI GRC
 What this question set covers
 
 Answering the questions below is sufficient to draft all 30 artifacts, including:
+	
 	•	AI policy, governance charter, code of conduct, RACI
 	•	Risk framework, risk register, compliance register, audit plan
 	•	Inventory and classification register, lifecycle SOPs, change management
@@ -31,11 +33,13 @@ Of course, these drafts then need to be reviewed, augmented, approved and activa
 Fastest way to use these questions
 
 You can answer in a compact format like:
+
 	•	“A4: Yes, A5: No, …”
 	•	Names and systems in plain text
 	•	Everything else Yes/No
 
 You can paste your answers into the AI GRC Copilot, along with the questions for context, and then ask the AI GRC Copilot to generate the full 30-document artifact pack set with:
+
 	•	Owner and accountable approver
 	•	Control objective and steps
 	•	Evidence and system of record
@@ -47,6 +51,7 @@ You can paste your answers into the AI GRC Copilot, along with the questions for
 ⸻
 
 A. Identity, scope, jurisdictions (non-binary where necessary)
+
 	•	A1 (Text): Organization legal name for documents
 	•	A2 (Text): Primary business sector / industry
 	•	A3 (List): Operating countries and jurisdictions (top 5 is fine)
@@ -60,6 +65,7 @@ A. Identity, scope, jurisdictions (non-binary where necessary)
 ⸻
 
 B. Executive accountability, owners, escalation (mostly non-binary for names)
+
 	•	B1 (Text): Accountable executive for AI governance (single name and title)
 	•	B2 (Y/N): Is there an existing risk owner role (CRO or equivalent)?
 	•	B3 (Text): Head of Legal name/title (or external counsel contact)
@@ -79,6 +85,7 @@ B. Executive accountability, owners, escalation (mostly non-binary for names)
 ⸻
 
 C. AI system landscape, use cases, impact (minimum to populate inventory, classification, model cards)
+	
 	•	C1 (Y/N): Do you currently use AI in production?
 	•	C2 (Y/N): Do you use AI internally only (employee-facing) as well as externally (customer/public-facing)?
 	•	C3 (Y/N): Do any AI outputs influence decisions about people (employment, credit, eligibility, access, pricing, safety)?
@@ -95,6 +102,7 @@ C. AI system landscape, use cases, impact (minimum to populate inventory, classi
 ⸻
 
 D. Data types, privacy, rights, provenance (drives DPIA, data policy, lineage)
+
 	•	D1 (Y/N): Do any AI systems process personal data?
 	•	D2 (Y/N): Do any AI systems process sensitive personal data (health, biometrics, children, precise location, etc.)?
 	•	D3 (Y/N): Do you process data about minors?
@@ -112,6 +120,7 @@ D. Data types, privacy, rights, provenance (drives DPIA, data policy, lineage)
 ⸻
 
 E. Risk appetite, unacceptable failures, thresholds (feeds risk register, controls, stop rules)
+
 	•	E1 (Y/N): Do you have an existing enterprise risk appetite statement that AI should inherit?
 	•	E2 (Y/N): Do you want to define AI-specific “unacceptable outcomes” explicitly?
 	•	E3 (Y/N): Is harm to individuals (financial, reputational, discrimination) treated as a top-tier risk category?
@@ -128,6 +137,7 @@ E. Risk appetite, unacceptable failures, thresholds (feeds risk register, contro
 ⸻
 
 F. Governance structure, decision rights, records (feeds charter, RACI, decision log)
+	
 	•	F1 (Y/N): Do you want one central AI Governance Committee?
 	•	F2 (Y/N): Do you want a separate Model Risk function (MRM) distinct from engineering?
 	•	F3 (Y/N): Do you want a single accountable owner per AI system (Model Owner concept)?
@@ -140,6 +150,7 @@ F. Governance structure, decision rights, records (feeds charter, RACI, decision
 ⸻
 
 G. Tooling and system of record (evidence-first foundations)
+	
 	•	G1 (Non-binary): Primary ticketing system (Jira, ServiceNow, other)
 	•	G2 (Non-binary): Primary document repository (Confluence, SharePoint, Google Drive, other)
 	•	G3 (Non-binary): Source control (GitHub, GitLab, other)
@@ -155,6 +166,7 @@ G. Tooling and system of record (evidence-first foundations)
 ⸻
 
 H. AI lifecycle controls (feeds lifecycle SOPs, change management, monitoring)
+	
 	•	H1 (Y/N): Do you require an intake form before any AI work begins?
 	•	H2 (Y/N): Do you require threat modeling for AI systems?
 	•	H3 (Y/N): Do you require pre-deployment validation and sign-off?
@@ -168,6 +180,7 @@ H. AI lifecycle controls (feeds lifecycle SOPs, change management, monitoring)
 ⸻
 
 I. Model risk management specifics (feeds MRM policy, testing protocols, model cards)
+	
 	•	I1 (Y/N): Do you want an explicit Model Risk Management Policy document?
 	•	I2 (Y/N): Do you require model cards for every deployed AI system?
 	•	I3 (Y/N): Do you require documented evaluation datasets and sampling plans?
@@ -180,6 +193,7 @@ I. Model risk management specifics (feeds MRM policy, testing protocols, model c
 ⸻
 
 J. Fairness, explainability, transparency, human oversight (feeds 4 separate standards)
+	
 	•	J1 (Y/N): Do any models produce outcomes that could create disparate impact across protected groups?
 	•	J2 (Y/N): Do you have access to demographic attributes to measure fairness?
 	•	J3 (Y/N): If you do not have demographics, do you want proxy or qualitative fairness methods?
@@ -191,6 +205,7 @@ J. Fairness, explainability, transparency, human oversight (feeds 4 separate sta
 ⸻
 
 K. Security, abuse, safety controls (feeds monitoring plan, incident plan, vendor clauses)
+	
 	•	K1 (Y/N): Do you require secure-by-default prompt and output handling (no secrets in prompts)?
 	•	K2 (Y/N): Do you require prompt injection testing for any tool-using or RAG system?
 	•	K3 (Y/N): Do you require data loss prevention controls for AI tooling?
@@ -201,6 +216,7 @@ K. Security, abuse, safety controls (feeds monitoring plan, incident plan, vendo
 ⸻
 
 L. Vendor and third-party AI (feeds vendor policy, due diligence checklist, contract minimums)
+
 	•	L1 (Y/N): Do you use any third-party AI vendors in production?
 	•	L2 (Y/N): Do vendors process your customer personal data?
 	•	L3 (Y/N): Do you require vendors to support audit rights (SOC 2 reports, pen tests, assurance)?
@@ -212,6 +228,7 @@ L. Vendor and third-party AI (feeds vendor policy, due diligence checklist, cont
 ⸻
 
 M. Incident response and escalation (feeds AI incident plan plus regulator playbook hooks)
+	
 	•	M1 (Y/N): Do you want a dedicated AI incident severity taxonomy (Sev 1–4) distinct from general incidents?
 	•	M2 (Y/N): Do you require reporting of certain AI incidents to Legal within 24 hours?
 	•	M3 (Y/N): Do you require customer notification workflows for AI-caused harm or data exposure?
@@ -222,6 +239,7 @@ M. Incident response and escalation (feeds AI incident plan plus regulator playb
 ⸻
 
 N. Audit, assurance, compliance mapping (feeds audit plan, compliance register, ISO roadmap)
+
 	•	N1 (Y/N): Do you want explicit alignment to ISO/IEC 42001?
 	•	N2 (Y/N): Do you want explicit alignment to NIST AI RMF?
 	•	N3 (Y/N): Do you want to map to any internal control framework (ISO 27001, SOC 2, COSO)?
@@ -232,6 +250,7 @@ N. Audit, assurance, compliance mapping (feeds audit plan, compliance register, 
 ⸻
 
 O. Training, communications, adoption (feeds training framework and awareness plan)
+
 	•	O1 (Y/N): Do you require mandatory AI training for all employees?
 	•	O2 (Y/N): Do you require role-based training for engineers, product, support, legal, risk?
 	•	O3 (Y/N): Do you require attestations (employees confirm understanding)?
@@ -242,6 +261,7 @@ O. Training, communications, adoption (feeds training framework and awareness pl
 ⸻
 
 P. Operating cadence, KPIs, continuous improvement (feeds KPIs, review gates, CI plan)
+	
 	•	P1 (Y/N): Do you want monthly governance reporting?
 	•	P2 (Y/N): Do you want quarterly governance reporting?
 	•	P3 (Y/N): Do you want standard KPIs across all AI systems (inventory completeness, review SLA, incident rate, exceptions aging)?
@@ -252,6 +272,7 @@ P. Operating cadence, KPIs, continuous improvement (feeds KPIs, review gates, CI
 ⸻
 
 Q. Document style and enforcement (keeps drafts consistent across the 30 artifacts)
+	
 	•	Q1 (Y/N): Do you want all documents written as policy-like (shall/required) rather than guidance-like (should)?
 	•	Q2 (Y/N): Do you want a single global policy plus SOP annexes, not 30 standalone policies?
 	•	Q3 (Y/N): Do you want every control to specify evidence, system of record, owner, review cadence?
