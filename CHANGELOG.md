@@ -2,6 +2,12 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.1.1 - 2026-07-30
+
+### Changed
+- Trademark rendering corrected to the canonical closed-up form GRCnext™. The retired spaced form "GRC next" is withdrawn from repository prose. One occurrence, in the grc line of the Part of the ecosystem section.
+- Version line updated in lockstep.
+
 ## v1.1.0 - 2026-07-15
 
 - All 17 question sections (A-Q) reformatted from tab-indented bullet code blocks to standard Markdown lists; questions preserved verbatim

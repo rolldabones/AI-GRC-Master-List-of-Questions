@@ -1,6 +1,6 @@
 # AI GRC Master List of Minimum Questions
 
-**Version 1.1.0 · 15 July 2026**
+**Version 1.1.1 · 30 July 2026**
 
 This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Spellbook Copilot](https://github.com/rolldabones/AI-GRC-Copilot) custom GPT to generate the full set of 30 canonical AI GRC artifact drafts (policy, charters, registers, SOPs, protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
 
@@ -306,7 +306,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 - [AI-Impact-Assessment-Tool](https://github.com/rolldabones/AI-Impact-Assessment-Tool) - the per-system assessment whose findings populate several answers here
 - [grc-workbook](https://github.com/rolldabones/grc-workbook) - the module-by-module instrument for building the GRC capability the 30 artifacts document
 - [RedCap-01](https://github.com/rolldabones/RedCap-01) - the diagnostic testing whether the resulting ERM actually improves decisions
-- [grc](https://github.com/rolldabones/grc) - the GRC next framework supplying the primitives behind the question design
+- [grc](https://github.com/rolldabones/grc) - the GRCnext™ framework supplying the primitives behind the question design
 
 ## License
 
