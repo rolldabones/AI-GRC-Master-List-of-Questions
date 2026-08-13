@@ -1,6 +1,6 @@
 # AI GRC Master List of Minimum Questions
 
-**Version 1.1.1 · 30 July 2026**
+**Version 1.1.2 · 13 August 2026**
 
 This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Spellbook Copilot](https://github.com/rolldabones/AI-GRC-Copilot) custom GPT to generate the full set of 30 canonical AI GRC artifact drafts (policy, charters, registers, SOPs, protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
 
@@ -294,7 +294,7 @@ Answering these sharpens the compliance register, vendor policy and regulatory p
 
 - ISO/IEC 42001:2023 remains the current edition of the AI management system standard (N1). EN ISO/IEC 42001:2026 is the CEN European adoption of the same 2023 text, not a revision. The companion impact assessment methodology is ISO/IEC 42005:2025.
 - NIST AI RMF (N2) refers to version 1.0 (January 2023) together with the Generative AI Profile (NIST AI 600-1, July 2024).
-- For organizations answering "Yes" to A4: the EU Digital Omnibus on AI was adopted by the European Parliament on 16 June 2026 and the Council on 29 June 2026 and awaits publication in the Official Journal as of this note. On entry into force it defers Annex III high-risk obligations to 2 December 2027 and Annex I embedded high-risk obligations to 2 August 2028. Until publication, 2 August 2026 remains the legally operative date.
+- **Amendment note, 13 August 2026 (KST).** This entry previously recorded the Digital Omnibus on AI as awaiting publication and 2 August 2026 as the legally operative high-risk date. That is superseded. For organizations answering "Yes" to A4: The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. It defers Annex III high-risk obligations to 2 December 2027 and Annex I embedded high-risk obligations to 2 August 2028. Article 50 transparency obligations still apply from 2 August 2026. Article 5 sits in Chapter II and, under Article 113, point (a), **applies from 2 February 2025**. ⧉ The amending regulation's own Official Journal text has not been read. Its renumbering of Article 113 is unconfirmed, so no pinpoint to a numbered subsection of Article 113 is given here. Cite the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex with an as-at date.
 - DPIA and data subject rights questions (Section D) use GDPR terminology. Equivalent triggers exist under other regimes (UK GDPR, US state privacy laws, Korea's PIPA); the drafts should localize per A3.
 - These questions name alignment targets for drafting purposes. They are not conformity claims. Verify current status before relying on any of them.
 

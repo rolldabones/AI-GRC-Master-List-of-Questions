@@ -2,6 +2,12 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.1.2 - 2026-08-13
+
+Omnibus currency remediation. The Digital Omnibus on AI entered into force on 27 July 2026; notes describing Official Journal publication as pending are recast as operative law with dated amendment notes. The Article 5 application date of 2 February 2025 is stated as fact (Article 113, point (a)). No pinpoint to a numbered subsection of Article 113 is given: the amending regulation's Official Journal text has not been read and its renumbering is unconfirmed.
+
+- README.md: the A4 guidance entry recast from awaiting publication to entered into force 27 July 2026, with a dated amendment note. Pairs with AI-GRC-Copilot v1.1.2, which carried the identical text.
+
 ## v1.1.1 - 2026-07-30
 
 ### Changed
