@@ -1,6 +1,6 @@
 # AI GRC Master List of Minimum Questions
 
-**Version 1.1.5 · 6 September 2026**
+**Version 1.2.0 · 8 September 2026**
 
 This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Spellbook Copilot](https://github.com/rolldabones/AI-GRC-Copilot) custom GPT to generate the full set of 30 canonical AI GRC artifact drafts (policy, charters, registers, SOPs, protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
 
@@ -16,7 +16,7 @@ If you cannot answer something, you can respond "Unknown/TBD" and the AI GRC Spe
 
 ## What this question set covers
 
-Answering the questions below is sufficient to draft all 30 artifacts, including:
+Answering the questions below is sufficient to draft all 30 artifacts, subject to the two limits stated after the list, including:
 
 - AI policy, governance charter, code of conduct, RACI
 - Risk framework, risk register, compliance register, audit plan
@@ -26,6 +26,13 @@ Answering the questions below is sufficient to draft all 30 artifacts, including
 - Incident response plan, vendor risk policy, monitoring plan
 - Model cards, decision log, stakeholder feedback record, tracker
 - Training framework, awareness plan, ISO/IEC 42001 roadmap, regulatory engagement playbook, continuous improvement plan
+
+**The two limits, stated at v1.2.0 rather than left implicit.**
+
+1. **Sufficiency depends on C13 and C14 being answered.** Both were promoted into the minimum set at v1.2.0, because role and general-purpose AI model provision determine which obligations attach and no other question in this set establishes either. Both accept `Unknown/TBD` like every other question here. Where either is left unresolved, the drafts fall back to deployer posture and carry no GPAI provider obligations; the open-items list records that, which is not the same thing as the drafts being complete.
+2. **R3 below remains proposed.** AI-specific local law outside the EU, UK and US is collected as a country in A3 and is flagged as a drafting trigger by no question in the set.
+
+The earlier form of this sentence claimed sufficiency with neither limit, while R2 below asserted in terms that no current question surfaced general-purpose AI model obligations. Both could not hold. The struck text is itemised in the v1.2.0 changelog entry.
 
 Of course, these drafts then need to be reviewed, augmented, approved and activated for your GRC system. Final Liability rests with the Human.
 
@@ -60,6 +67,8 @@ You can paste your answers into the AI GRC Spellbook Copilot, along with the que
 - A7 (Y/N): Is the organization regulated by a sector regulator (financial, health, telecom, etc.)?
 - A8 (Text): If yes, name the regulator(s)
 - A9 (Y/N): Do you want the artifacts to be written as a global baseline with local addenda?
+
+**Role is not a geography question.** A3 to A6 establish where you operate. They do not establish whether you act as provider, deployer, importer or distributor, and obligations under the EU AI Act and comparable regimes differ sharply by role. Role is asked at **C13**, per use case, and general-purpose AI model provision at **C14**. Both are in the minimum set from v1.2.0.
 
 ---
 
@@ -97,6 +106,8 @@ You can paste your answers into the AI GRC Spellbook Copilot, along with the que
 - C10 (Y/N): Do you use AI for safety critical functions (health, transportation, industrial control, security operations)?
 - C11 (List): Top 5 AI use cases, each with: name, business owner role, user group (internal/external), decision impact (advisory vs automated)
 - C12 (Y/N): Do you need an appeals or contestability process for affected users?
+- C13 (Per use case): For each use case listed at C11, does the organization act as provider, deployer, importer or distributor? Obligations under the EU AI Act and comparable regimes differ sharply by role, and geography (A3-A6) does not capture it. Answer `Unknown/TBD` where the role is not settled; the drafts then carry an explicit placeholder instead of assuming deployer posture.
+- C14 (Y/N): Do you develop or place general-purpose AI models on the market, as opposed to only building on top of them? A "Yes" pulls in GPAI provider obligations that no other question in this set surfaces. Answer `Unknown/TBD` where this is not settled.
 
 ---
 
@@ -280,13 +291,13 @@ You can paste your answers into the AI GRC Spellbook Copilot, along with the que
 
 ---
 
-## Proposed additions (v1.1.0, under consideration, not yet part of the minimum set)
+## Proposed additions (under consideration, not yet part of the minimum set)
 
-Answering these sharpens the compliance register, vendor policy and regulatory playbook. They are not required for the sufficiency claim above.
+Answering these sharpens the compliance register, vendor policy and regulatory playbook.
 
-- R1 (Per use case): For each AI system in scope, does the organization act as provider, deployer, importer or distributor? Obligations under the EU AI Act and comparable regimes differ sharply by role, and geography (A3-A6) does not capture role.
-- R2 (Y/N): Do you develop or place general-purpose AI models on the market (as opposed to only building on top of them)? A "Yes" pulls in GPAI provider obligations that none of the current questions surface.
 - R3 (Y/N): Do you operate in or serve residents of jurisdictions with dedicated AI statutes beyond the EU, UK and US (eg Korea's AI Framework Act)? A3 collects the country list but nothing flags AI-specific local law as a drafting trigger.
+
+**R1 and R2 were promoted into the minimum set at v1.2.0 and are now C13 and C14.** They were proposed at v1.1.0 and sat here for seven weeks while the sufficiency claim above contradicted R2 in terms. The heading of this block carried `v1.1.0` as though it were a current label; it was a released version the repository had passed five times. R3 stays proposed and is named as a limit on the sufficiency claim above rather than as an optional extra.
 
 ---
 
@@ -310,7 +321,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.1.5. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
+> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

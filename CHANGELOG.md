@@ -2,6 +2,26 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.0 - 2026-09-08
+
+**Minor. The minimum set changes.** Standing item 13 in `account-maintenance/RUNBOOK.md` §8 is remediated here: the sufficiency claim in `README.md` and proposed addition R2 contradicted each other in terms, and had done since v1.1.0 on 15 July 2026.
+
+- **The contradiction, stated before the fix.** `README.md` line 19 read that answering the questions was sufficient to draft all 30 artifacts. R2, in the proposed-additions block of the same file, read that a "Yes" on general-purpose AI model provision "pulls in GPAI provider obligations that none of the current questions surface". A set that does not surface an obligation is not sufficient to draft the artifact carrying it. Both could not hold, and the file asserted both for seven weeks.
+
+- **STRUCK.** ~~"Answering the questions below is sufficient to draft all 30 artifacts, including:"~~ The claim is **qualified, not struck in the file**, and the reason is recorded rather than left to inference. Striking it in `README.md` would have removed the only statement of what the set covers from the section headed "What this question set covers", leaving a reader of an operative intake instrument with a hole where the coverage claim was. What was false was the unqualified form, not the coverage. The sentence now reads "…subject to the two limits stated after the list", and the two limits are stated in full immediately below the list. Per RUNBOOK §4, the correction of substance is struck and itemised here, in the changelog, which is where that rule places it.
+
+- **R1 and R2 promoted into the minimum set as C13 and C14**, with `Unknown/TBD` explicitly permitted on both, which is the answer the file has allowed on every question since v1.0.0. C13 asks role, per use case, against the C11 list. C14 asks general-purpose AI model provision. R3 stays proposed.
+
+- **Why C13 and C14 rather than a new section R.** A new lettered section would have taken the count from 17 to 18, and "17 sections" is asserted in three places outside this repository: `rolldabones/ECOSYSTEM.md` line 33, `AI-Governance-Academy/law-firm-ai-deployment-spec.md` line 151, and this repository's own `CITATION.cff` abstract, which is that ECOSYSTEM line verbatim by the house form settled at v1.1.5. This session's scope fence is this repository, so two of those three could not be corrected here, and a release that knowingly puts a correct fact out of step across three repositories is RUNBOOK §6's recurring defect manufactured on purpose. Section C is also the right home on the merits: C11 already collects each use case with its owner, user group and decision impact, and role is an attribute of that list rather than of the organization. **The section count is unchanged at 17 and no existing question is renumbered.** The mapping R1 → C13 and R2 → C14 is recorded here and in the proposed-additions block so the register entry remains traceable.
+
+- **A pointer in section A, where the gap is.** R1's own text said geography does not capture role. The gap it named sits in section A, so section A now carries one line saying so and naming C13 and C14. No question in section A is added, renumbered or changed.
+
+- **The heading of the proposed-additions block loses its version token.** It read "Proposed additions (v1.1.0, under consideration, not yet part of the minimum set)". `v1.1.0` shipped on 15 July 2026 and the repository has passed it five times; the token read as a plan and was a stale label. Class E4 has reported it as a version lag on every sweep. That the register entry for item 13 read the same string as forward-looking is recorded in `account-maintenance` v1.4.6.
+
+- **E4 will still report one LOW on this repository**, on the `v1.1.0` in the promotion note, and that is correct: E4 reports version tokens and does not judge, and a history line naming the version something was proposed at is legitimate prose. It is a different line from the stale heading and it is stated here so the finding is not read as unchanged.
+
+- **Version bumped at every occurrence:** masthead line 3, the How to Cite block, `CITATION.cff` `version` and `date-released`. `LICENSE.md` is unchanged byte for byte.
+
 ## v1.1.5 - 2026-09-06
 
 Citation infrastructure, doctrine citation line and lockstep maintenance. Session C of the September 2026 improvement pack, one patch release per repository across all 21 public repositories.
