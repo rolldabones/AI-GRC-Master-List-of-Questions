@@ -2,6 +2,13 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.1 - 2026-10-15
+
+**Patch. Legal currency, no change to the question set.** Session T1 of the whole-account review of 15 October 2026 (KST).
+
+- **Regulatory-currency note.** "Article 50 transparency obligations still apply from 2 August 2026" stated the deployer position only. Since v1.2.0 C13 and C14 ask whether the organization is a provider, so the provider carve-out became material: providers of generative systems placed on the market before 2 August 2026 have until 2 December 2026 for the Article 50(2) marking duty (Recital 38, Regulation (EU) 2026/1744, [OJ L, 2026/1744](http://data.europa.eu/eli/reg/2026/1744/oj)). Added. The note heading records its amendment dates, having been headed "(15 July 2026)" over a 13 August amendment. The note links to the account's canonical [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note), published the same day, which governs on conflict. Reviewer report 11, items 5 and 8.
+- Masthead, How to Cite and `CITATION.cff` to 1.2.1 in lockstep. All other files unchanged byte for byte.
+
 ## v1.2.0 - 2026-09-08
 
 **Minor. The minimum set changes.** Standing item 13 in `account-maintenance/RUNBOOK.md` §8 is remediated here: the sufficiency claim in `README.md` and proposed addition R2 contradicted each other in terms, and had done since v1.1.0 on 15 July 2026.
