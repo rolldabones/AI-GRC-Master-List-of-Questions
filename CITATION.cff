@@ -4,8 +4,8 @@ title: "AI GRC Master List of Minimum Questions"
 authors:
   - family-names: "Paik"
     given-names: "Son-U Michael"
-version: 1.2.1
-date-released: "2026-10-15"
+version: 1.2.2
+date-released: "2026-10-17"
 license: CC-BY-NC-SA-4.0
 repository-code: "https://github.com/rolldabones/AI-GRC-Master-List-of-Questions"
 abstract: "The minimum input set (17 sections, mostly yes/no) that, once answered, lets the Spellbook Copilot draft all 30 artifacts; pairs with AI-GRC-Copilot."

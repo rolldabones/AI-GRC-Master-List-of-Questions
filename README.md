@@ -1,6 +1,6 @@
 # AI GRC Master List of Minimum Questions
 
-**Version 1.2.1 · 15 October 2026**
+**Version 1.2.2 · 17 October 2026**
 
 This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Spellbook Copilot](https://github.com/rolldabones/AI-GRC-Copilot) custom GPT to generate the full set of 30 canonical AI GRC artifact drafts (policy, charters, registers, SOPs, protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
 
@@ -32,7 +32,7 @@ Answering the questions below is sufficient to draft all 30 artifacts, subject t
 1. **Sufficiency depends on C13 and C14 being answered.** Both were promoted into the minimum set at v1.2.0, because role and general-purpose AI model provision determine which obligations attach and no other question in this set establishes either. Both accept `Unknown/TBD` like every other question here. Where either is left unresolved, the drafts fall back to deployer posture and carry no GPAI provider obligations; the open-items list records that, which is not the same thing as the drafts being complete.
 2. **R3 below remains proposed.** AI-specific local law outside the EU, UK and US is collected as a country in A3 and is flagged as a drafting trigger by no question in the set.
 
-The earlier form of this sentence claimed sufficiency with neither limit, while R2 below asserted in terms that no current question surfaced general-purpose AI model obligations. Both could not hold. The struck text is itemised in the v1.2.0 changelog entry.
+The earlier form of this sentence claimed sufficiency with neither limit, while R2 below asserted in terms that no current question surfaced general-purpose AI model obligations. Both could not hold. The struck text is itemized in the v1.2.0 changelog entry.
 
 Of course, these drafts then need to be reviewed, augmented, approved and activated for your GRC system. Final Liability rests with the Human.
 
@@ -321,7 +321,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.1. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
+> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.2. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

@@ -2,6 +2,14 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.2 - 2026-10-17
+
+**Patch. House style, no change to the question set.** Session T3 of the whole-account review of 15 October 2026 (doc section 8; reviewer report 11, item C4).
+
+- `README.md`: "itemised" to "itemized" in live text. The same word in the v1.2.0 entry below is shipped history and is left as written (ruling 7 of 15 October 2026).
+- Closing line added at the end of this file.
+- Masthead, How to Cite and `CITATION.cff` to 1.2.2 in lockstep. The history paragraphs and the mirror form are session T4's.
+
 ## v1.2.1 - 2026-10-15
 
 **Patch. Legal currency, no change to the question set.** Session T1 of the whole-account review of 15 October 2026 (KST).
@@ -83,3 +91,7 @@ Omnibus currency remediation. The Digital Omnibus on AI entered into force on 27
 ## v1.0.0 - baseline
 
 - Initial README: design goals, coverage statement, usage instructions and the 17 question sections (A-Q), formatted with tab-bullet code blocks and "⸻" separators. No LICENSE, CHANGELOG or tags.
+
+---
+
+**Final Liability rests with the Human.**
