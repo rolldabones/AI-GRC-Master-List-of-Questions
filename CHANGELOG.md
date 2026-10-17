@@ -2,6 +2,17 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.3 - 2026-10-18
+
+**Patch. Retirement residue, no change to the question set.** Session T4 of the whole-account review of 15 October 2026 (doc section 4; reviewer report 11, item A12). The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and converted to a private plug-in (determination D5); three sentences still sent the reader to it as a GPT.
+
+- ~~"enables the AI GRC Spellbook Copilot custom GPT to generate the full set"~~ **STRUCK.** Now "enables the AI GRC Copilot instructions, run on any current assistant, to generate the full set".
+- ~~"the AI GRC Spellbook Copilot will draft with explicit placeholders"~~ **STRUCK.** Now "the AI GRC Copilot instructions draft with explicit placeholders".
+- ~~"You can paste your answers into the AI GRC Spellbook Copilot"~~ **STRUCK.** Now points to an assistant running AI-GRC-Copilot's `instructions.md`.
+- One dated sentence under the pairing paragraph states the retirement and points to the account's RETIREMENT.md.
+- This repository joins the repositories `account-maintenance` RUNBOOK §8 item 28 names; that item is closed under D5 in the same session.
+- README masthead, How to Cite and `CITATION.cff` to 1.2.3 in lockstep.
+
 ## v1.2.2 - 2026-10-17
 
 **Patch. House style, no change to the question set.** Session T3 of the whole-account review of 15 October 2026 (doc section 8; reviewer report 11, item C4).

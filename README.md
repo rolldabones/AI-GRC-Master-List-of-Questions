@@ -1,10 +1,12 @@
 # AI GRC Master List of Minimum Questions
 
-**Version 1.2.2 · 17 October 2026**
+**Version 1.2.3 · 18 October 2026**
 
-This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Spellbook Copilot](https://github.com/rolldabones/AI-GRC-Copilot) custom GPT to generate the full set of 30 canonical AI GRC artifact drafts (policy, charters, registers, SOPs, protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
+This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Copilot](https://github.com/rolldabones/AI-GRC-Copilot) instructions, run on any current assistant, to generate the full set of 30 canonical AI GRC artifact drafts (policy, charters, registers, SOPs, protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
 
 This repository and [AI-GRC-Copilot](https://github.com/rolldabones/AI-GRC-Copilot) are a pair: that repo holds the drafting engine, this repo holds the minimum input set that feeds it.
+
+The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform; the instructions published in AI-GRC-Copilot are the text of record (see [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md)).
 
 ## Design goals
 
@@ -12,7 +14,7 @@ This repository and [AI-GRC-Copilot](https://github.com/rolldabones/AI-GRC-Copil
 - Only a small number of non-binary fields for names, lists and numeric thresholds
 - Questions are structured so a "No" often removes an entire section of multiple documents
 
-If you cannot answer something, you can respond "Unknown/TBD" and the AI GRC Spellbook Copilot will draft with explicit placeholders and an open-items list.
+If you cannot answer something, you can respond "Unknown/TBD" and the AI GRC Copilot instructions draft with explicit placeholders and an open-items list.
 
 ## What this question set covers
 
@@ -44,7 +46,7 @@ You can answer in a compact format like:
 - Names and systems in plain text
 - Everything else Yes/No
 
-You can paste your answers into the AI GRC Spellbook Copilot, along with the questions for context, and then ask it to generate the full 30-document artifact pack set with:
+You can paste your answers into an assistant running the AI GRC Copilot instructions ([`instructions.md`](https://github.com/rolldabones/AI-GRC-Copilot/blob/main/instructions.md)), along with the questions for context, and then ask it to generate the full 30-document artifact pack set with:
 
 - Owner and accountable approver
 - Control objective and steps
@@ -321,7 +323,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.2. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
+> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.3. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
