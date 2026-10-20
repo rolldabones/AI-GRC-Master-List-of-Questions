@@ -1,8 +1,8 @@
 # AI GRC Master List of Minimum Questions
 
-**Version 1.2.4 · 20 October 2026**
+**Version 1.2.5 · 20 October 2026**
 
-This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Copilot](https://github.com/rolldabones/AI-GRC-Copilot) instructions, run on any current assistant, to generate the full set of 30 canonical AI governance, risk management and compliance (GRC) artifact drafts (policy, charters, registers, standard operating procedures (SOPs), protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
+This is a Master List of Minimum Questions whose answers give the [AI GRC Copilot](https://github.com/rolldabones/AI-GRC-Copilot) instructions, run on any current assistant, the inputs to draft the 30 canonical AI governance, risk management and compliance (GRC) artifact drafts (policy, charters, registers, standard operating procedures (SOPs), protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement), subject to the two known gaps stated below.
 
 This repository and [AI-GRC-Copilot](https://github.com/rolldabones/AI-GRC-Copilot) are a pair: that repo holds the drafting engine, this repo holds the minimum input set that feeds it.
 
@@ -12,13 +12,12 @@ The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and conver
 
 - Binary yes/no wherever possible
 - Only a small number of non-binary fields for names, lists and numeric thresholds
-- Questions are structured so a "No" often removes an entire section of multiple documents
 
 If you cannot answer something, you can respond "Unknown/TBD" and the AI GRC Copilot instructions draft with explicit placeholders and an open-items list. "Unknown/TBD" here maps to the instructions' own terms: they write the placeholder as "[TBD]" and report a missing fact as "Unknown/Insufficient data".
 
 ## What this question set covers
 
-Answering the questions below is sufficient to draft all 30 artifacts, subject to the two limits stated after the list, including:
+The questions below collect the inputs for the 30 artifacts, subject to the two known gaps stated after the list, including:
 
 - AI policy, governance charter, code of conduct, RACI (responsible, accountable, consulted, informed) matrix
 - Risk framework, risk register, compliance register, audit plan
@@ -29,9 +28,9 @@ Answering the questions below is sufficient to draft all 30 artifacts, subject t
 - Model cards, decision log, stakeholder feedback record, tracker
 - Training framework, awareness plan, ISO/IEC 42001 roadmap, regulatory engagement playbook, continuous improvement plan
 
-**The two limits.**
+**Two known gaps.**
 
-1. **Sufficiency depends on C13 and C14 being answered.** Both are in the minimum set because role and general-purpose AI (GPAI) model provision determine which obligations attach and no other question in this set establishes either. Both accept `Unknown/TBD` like every other question here. Where either is left unresolved, the drafts fall back to deployer posture and carry no GPAI provider obligations; the open-items list records that, which is not the same thing as the drafts being complete.
+1. **C13 and C14 must be answered.** Both are in the minimum set because role and general-purpose AI (GPAI) model provision determine which obligations attach and no other question in this set establishes either. Both accept `Unknown/TBD` like every other question here. Where either is left unresolved, the role is an open item with an explicit placeholder, not an assumed deployer posture; the open-items list records that, which is not the same thing as the drafts being complete. The AI GRC Copilot instructions have no rule specific to C13 or C14: they apply their general placeholder rule, so check the drafts for the placeholder and for any provider obligations the answers call for.
 2. **R3 below remains proposed.** AI-specific local law outside the EU, UK and US is collected as a country in A3 and is flagged as a drafting trigger by no question in the set.
 
 Of course, these drafts then need to be reviewed, augmented, approved and activated for your GRC system. Final Liability rests with the Human.
@@ -107,8 +106,8 @@ You can paste your answers into an assistant running the AI GRC Copilot instruct
 - C10 (Y/N): Do you use AI for safety critical functions (health, transportation, industrial control, security operations)?
 - C11 (List): Top 5 AI use cases, each with: name, business owner role, user group (internal/external), decision impact (advisory vs automated)
 - C12 (Y/N): Do you need an appeals or contestability process for affected users?
-- C13 (Per use case): For each use case listed at C11, does the organization act as provider, deployer, importer, distributor, authorized representative or product manufacturer (the operator roles in Article 3(8) of the EU AI Act)? Obligations under the EU AI Act and comparable regimes differ sharply by role, and geography (A3-A6) does not capture it. Answer `Unknown/TBD` where the role is not settled; the drafts then carry an explicit placeholder instead of assuming deployer posture.
-- C14 (Y/N): Do you develop a general-purpose AI model, or have one developed, and place it on the market under your own name (including after modifying another provider's model)? A "Yes" pulls in GPAI provider obligations that no other question in this set surfaces. Answer `Unknown/TBD` where this is not settled.
+- C13 (Per use case): For each use case listed at C11, does the organization act as provider, deployer, importer, distributor, authorized representative or product manufacturer (the operator roles in Article 3(8) of the EU AI Act)? Obligations under the EU AI Act and comparable regimes differ sharply by role, and geography (A3-A6) does not capture it. Answer `Unknown/TBD` where the role is not settled; the role is then an open item, not an assumed deployer posture.
+- C14 (Y/N): Do you develop a general-purpose AI model, or have one developed, and place it on the market under your own name (including after modifying another provider's model)? A "Yes" puts GPAI model provider obligations in scope (Chapter V of the EU AI Act, where A4 is "Yes"), and no other question in this set surfaces them. Answer `Unknown/TBD` where this is not settled.
 
 ---
 
@@ -298,7 +297,7 @@ Answering these sharpens the compliance register, vendor policy and regulatory p
 
 - R3 (Y/N): Do you operate in or serve residents of jurisdictions with dedicated AI statutes beyond the EU, UK and US (eg Korea's AI Framework Act)? A3 collects the country list but nothing flags AI-specific local law as a drafting trigger.
 
-**R1 and R2 were promoted into the minimum set at v1.2.0 and are now C13 and C14.** R3 stays proposed and is named as a limit on the sufficiency claim above rather than as an optional extra.
+**R1 and R2 were promoted into the minimum set at v1.2.0 and are now C13 and C14.** R3 stays proposed and is named as a known gap above rather than as an optional extra.
 
 ---
 
@@ -321,7 +320,7 @@ Answering these sharpens the compliance register, vendor policy and regulatory p
 | Chapter III, Sections 1, 2 and 3, except Article 6(5): AI systems classified as high-risk pursuant to Article 6(2) and Annex III | 2 December 2027 | Article 113, third paragraph, point (c)(i), as replaced by Regulation (EU) 2026/1744, Article 1, point (40)(b) | 13 August 2026 |
 | Chapter III, Sections 1, 2 and 3, except Article 6(5): AI systems classified as high-risk pursuant to Article 6(1) and Annex I | 2 August 2028 | Article 113, third paragraph, point (c)(ii), as replaced by Regulation (EU) 2026/1744, Article 1, point (40)(b) | 13 August 2026 |
 
-**Article 113 has unnumbered paragraphs with lettered points, so the correct pinpoint form is "Article 113, third paragraph, point (c)", not "Article 113(3)".** Rows as at 13 August 2026 were read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex; rows as at 20 October 2026 against the Official Journal texts of Regulations (EU) 2024/1689 and (EU) 2026/1744.
+**Article 113 has unnumbered paragraphs with lettered points; the house form for the pinpoint is "Article 113, third paragraph, point (c)", the form the amending act uses.** Regulation (EU) 2024/1689 itself also writes "Article 113(3), point (a)" (Article 111(1)). Rows as at 13 August 2026 were read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex; rows as at 20 October 2026 against the Official Journal texts of Regulations (EU) 2024/1689 and (EU) 2026/1744.
 
 - DPIA and data subject rights questions (Section D) use GDPR terminology. Equivalent triggers exist under other regimes (UK GDPR, US state privacy laws, Korea's Personal Information Protection Act (PIPA)); the drafts should localize per A3.
 - These questions name alignment targets for drafting purposes. They are not conformity claims. Verify current status before relying on any of them.
@@ -338,7 +337,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.4. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
+> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.5. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
