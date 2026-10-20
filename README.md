@@ -2,7 +2,7 @@
 
 **Version 1.2.4 · 20 October 2026**
 
-This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Copilot](https://github.com/rolldabones/AI-GRC-Copilot) instructions, run on any current assistant, to generate the full set of 30 canonical AI GRC artifact drafts (policy, charters, registers, SOPs, protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
+This is a Master List of Minimum Questions that, if answered, enables the [AI GRC Copilot](https://github.com/rolldabones/AI-GRC-Copilot) instructions, run on any current assistant, to generate the full set of 30 canonical AI governance, risk management and compliance (GRC) artifact drafts (policy, charters, registers, standard operating procedures (SOPs), protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement).
 
 This repository and [AI-GRC-Copilot](https://github.com/rolldabones/AI-GRC-Copilot) are a pair: that repo holds the drafting engine, this repo holds the minimum input set that feeds it.
 
@@ -14,27 +14,25 @@ The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and conver
 - Only a small number of non-binary fields for names, lists and numeric thresholds
 - Questions are structured so a "No" often removes an entire section of multiple documents
 
-If you cannot answer something, you can respond "Unknown/TBD" and the AI GRC Copilot instructions draft with explicit placeholders and an open-items list.
+If you cannot answer something, you can respond "Unknown/TBD" and the AI GRC Copilot instructions draft with explicit placeholders and an open-items list. "Unknown/TBD" here maps to the instructions' own terms: they write the placeholder as "[TBD]" and report a missing fact as "Unknown/Insufficient data".
 
 ## What this question set covers
 
 Answering the questions below is sufficient to draft all 30 artifacts, subject to the two limits stated after the list, including:
 
-- AI policy, governance charter, code of conduct, RACI
+- AI policy, governance charter, code of conduct, RACI (responsible, accountable, consulted, informed) matrix
 - Risk framework, risk register, compliance register, audit plan
 - Inventory and classification register, lifecycle SOPs, change management
 - Model Risk Management (MRM) policy, bias and fairness protocol, explainability standards, human-in-the-loop (HITL) guidelines
-- Data policy for AI, DPIA process, provenance and lineage docs
+- Data policy for AI, data protection impact assessment (DPIA) process, provenance and lineage docs
 - Incident response plan, vendor risk policy, monitoring plan
 - Model cards, decision log, stakeholder feedback record, tracker
 - Training framework, awareness plan, ISO/IEC 42001 roadmap, regulatory engagement playbook, continuous improvement plan
 
-**The two limits, stated at v1.2.0 rather than left implicit.**
+**The two limits.**
 
-1. **Sufficiency depends on C13 and C14 being answered.** Both were promoted into the minimum set at v1.2.0, because role and general-purpose AI model provision determine which obligations attach and no other question in this set establishes either. Both accept `Unknown/TBD` like every other question here. Where either is left unresolved, the drafts fall back to deployer posture and carry no GPAI provider obligations; the open-items list records that, which is not the same thing as the drafts being complete.
+1. **Sufficiency depends on C13 and C14 being answered.** Both are in the minimum set because role and general-purpose AI (GPAI) model provision determine which obligations attach and no other question in this set establishes either. Both accept `Unknown/TBD` like every other question here. Where either is left unresolved, the drafts fall back to deployer posture and carry no GPAI provider obligations; the open-items list records that, which is not the same thing as the drafts being complete.
 2. **R3 below remains proposed.** AI-specific local law outside the EU, UK and US is collected as a country in A3 and is flagged as a drafting trigger by no question in the set.
-
-The earlier form of this sentence claimed sufficiency with neither limit, while R2 below asserted in terms that no current question surfaced general-purpose AI model obligations. Both could not hold. The struck text is itemized in the v1.2.0 changelog entry.
 
 Of course, these drafts then need to be reviewed, augmented, approved and activated for your GRC system. Final Liability rests with the Human.
 
@@ -46,12 +44,12 @@ You can answer in a compact format like:
 - Names and systems in plain text
 - Everything else Yes/No
 
-You can paste your answers into an assistant running the AI GRC Copilot instructions ([`instructions.md`](https://github.com/rolldabones/AI-GRC-Copilot/blob/main/instructions.md)), along with the questions for context, and then ask it to generate the full 30-document artifact pack set with:
+You can paste your answers into an assistant running the AI GRC Copilot instructions ([`instructions.md`](https://github.com/rolldabones/AI-GRC-Copilot/blob/main/instructions.md)), along with the questions for context, and then ask it to generate the full 30-document artifact pack set. Where a design choice is contested, the instructions first propose options and stop for you to pick one before drafting (their DECIDE step), so the full pack follows those decisions rather than arriving in one pass. Each artifact carries:
 
 - Owner and accountable approver
 - Control objective and steps
 - Evidence and system of record
-- Review cadence and KPIs
+- Review cadence and key performance indicators (KPIs)
 - Exceptions process
 - Links to dependent artifacts
 - An open-items list for any "Unknown/TBD" responses
@@ -77,10 +75,10 @@ You can paste your answers into an assistant running the AI GRC Copilot instruct
 ## B. Executive accountability, owners, escalation (mostly non-binary for names)
 
 - B1 (Text): Accountable executive for AI governance (single name and title)
-- B2 (Y/N): Is there an existing risk owner role (CRO or equivalent)?
+- B2 (Y/N): Is there an existing risk owner role (chief risk officer (CRO) or equivalent)?
 - B3 (Text): Head of Legal name/title (or external counsel contact)
-- B4 (Text): Privacy officer / DPO name/title (or "None")
-- B5 (Text): Security lead name/title (CISO or equivalent)
+- B4 (Text): Privacy officer / data protection officer (DPO) name/title (or "None")
+- B5 (Text): Security lead name/title (chief information security officer (CISO) or equivalent)
 - B6 (Text): Engineering lead name/title responsible for AI delivery
 - B7 (Text): Internal Audit lead name/title (or "No Internal Audit")
 - B8 (Y/N): Do you already have an enterprise risk committee that can take AI oversight?
@@ -97,7 +95,8 @@ You can paste your answers into an assistant running the AI GRC Copilot instruct
 ## C. AI system landscape, use cases, impact (minimum to populate inventory, classification, model cards)
 
 - C1 (Y/N): Do you currently use AI in production?
-- C2 (Y/N): Do you use AI internally only (employee-facing) as well as externally (customer/public-facing)?
+- C2a (Y/N): Do you use AI internally (employee-facing)?
+- C2b (Y/N): Do you use AI externally (customer or public-facing)?
 - C3 (Y/N): Do any AI outputs influence decisions about people (employment, credit, eligibility, access, pricing, safety)?
 - C4 (Y/N): Do any AI systems operate in real time (sub-second decisions)?
 - C5 (Y/N): Do you use generative AI (LLMs, image generation, code generation) in any business process?
@@ -108,8 +107,8 @@ You can paste your answers into an assistant running the AI GRC Copilot instruct
 - C10 (Y/N): Do you use AI for safety critical functions (health, transportation, industrial control, security operations)?
 - C11 (List): Top 5 AI use cases, each with: name, business owner role, user group (internal/external), decision impact (advisory vs automated)
 - C12 (Y/N): Do you need an appeals or contestability process for affected users?
-- C13 (Per use case): For each use case listed at C11, does the organization act as provider, deployer, importer or distributor? Obligations under the EU AI Act and comparable regimes differ sharply by role, and geography (A3-A6) does not capture it. Answer `Unknown/TBD` where the role is not settled; the drafts then carry an explicit placeholder instead of assuming deployer posture.
-- C14 (Y/N): Do you develop or place general-purpose AI models on the market, as opposed to only building on top of them? A "Yes" pulls in GPAI provider obligations that no other question in this set surfaces. Answer `Unknown/TBD` where this is not settled.
+- C13 (Per use case): For each use case listed at C11, does the organization act as provider, deployer, importer, distributor, authorized representative or product manufacturer (the operator roles in Article 3(8) of the EU AI Act)? Obligations under the EU AI Act and comparable regimes differ sharply by role, and geography (A3-A6) does not capture it. Answer `Unknown/TBD` where the role is not settled; the drafts then carry an explicit placeholder instead of assuming deployer posture.
+- C14 (Y/N): Do you develop a general-purpose AI model, or have one developed, and place it on the market under your own name (including after modifying another provider's model)? A "Yes" pulls in GPAI provider obligations that no other question in this set surfaces. Answer `Unknown/TBD` where this is not settled.
 
 ---
 
@@ -127,7 +126,7 @@ You can paste your answers into an assistant running the AI GRC Copilot instruct
 - D10 (Y/N): Do you have a process to honor data subject rights (access, deletion, correction) that includes model-related data?
 - D11 (Y/N): Do you require dataset provenance documentation for every model?
 - D12 (Y/N): Do you require training data to be reproducible (same inputs can be reassembled later)?
-- D13 (Y/N): Do you require content filtering or PII redaction before training?
+- D13 (Y/N): Do you require content filtering or personally identifiable information (PII) redaction before training?
 
 ---
 
@@ -182,7 +181,7 @@ You can paste your answers into an assistant running the AI GRC Copilot instruct
 - H1 (Y/N): Do you require an intake form before any AI work begins?
 - H2 (Y/N): Do you require threat modeling for AI systems?
 - H3 (Y/N): Do you require pre-deployment validation and sign-off?
-- H4 (Y/N): Do you require post-deployment monitoring with defined SLAs?
+- H4 (Y/N): Do you require post-deployment monitoring with defined service level agreements (SLAs)?
 - H5 (Y/N): Do you allow shadow deployments or dark launches?
 - H6 (Y/N): Do you allow continuous deployment for models without manual approval?
 - H7 (Y/N): Do you require rollback plans for model changes?
@@ -219,7 +218,7 @@ You can paste your answers into an assistant running the AI GRC Copilot instruct
 ## K. Security, abuse, safety controls (feeds monitoring plan, incident plan, vendor clauses)
 
 - K1 (Y/N): Do you require secure-by-default prompt and output handling (no secrets in prompts)?
-- K2 (Y/N): Do you require prompt injection testing for any tool-using or RAG system?
+- K2 (Y/N): Do you require prompt injection testing for any tool-using or retrieval-augmented generation (RAG) system?
 - K3 (Y/N): Do you require data loss prevention controls for AI tooling?
 - K4 (Y/N): Do you restrict use of public AI tools for confidential data?
 - K5 (Y/N): Do you require vulnerability management to include model and pipeline components?
@@ -245,7 +244,7 @@ You can paste your answers into an assistant running the AI GRC Copilot instruct
 - M2 (Y/N): Do you require reporting of certain AI incidents to Legal within 24 hours?
 - M3 (Y/N): Do you require customer notification workflows for AI-caused harm or data exposure?
 - M4 (Y/N): Do you require regulator notification decisioning to be led by Legal?
-- M5 (Y/N): Do you require post-incident root cause analysis and CAPA for all Sev 1-2 AI incidents?
+- M5 (Y/N): Do you require post-incident root cause analysis and corrective and preventive action (CAPA) for all Sev 1-2 AI incidents?
 - M6 (Y/N): Do you require an incident evidence bundle (logs, prompts, outputs, model version, approvals)?
 
 ---
@@ -299,16 +298,32 @@ Answering these sharpens the compliance register, vendor policy and regulatory p
 
 - R3 (Y/N): Do you operate in or serve residents of jurisdictions with dedicated AI statutes beyond the EU, UK and US (eg Korea's AI Framework Act)? A3 collects the country list but nothing flags AI-specific local law as a drafting trigger.
 
-**R1 and R2 were promoted into the minimum set at v1.2.0 and are now C13 and C14.** They were proposed at v1.1.0 and sat here for seven weeks while the sufficiency claim above contradicted R2 in terms. The heading of this block carried `v1.1.0` as though it were a current label; it was a release the repository had passed five times. R3 stays proposed and is named as a limit on the sufficiency claim above rather than as an optional extra.
+**R1 and R2 were promoted into the minimum set at v1.2.0 and are now C13 and C14.** R3 stays proposed and is named as a limit on the sufficiency claim above rather than as an optional extra.
 
 ---
 
-## Regulatory-currency note (15 July 2026, amended 13 August and 15 October 2026)
+## Regulatory-currency note (15 July 2026, amended 13 August, 15 October and 20 October 2026)
 
-- ISO/IEC 42001:2023 remains the current edition of the AI management system standard (N1). EN ISO/IEC 42001:2026 is the CEN European adoption of the same 2023 text, not a revision. The companion impact assessment methodology is ISO/IEC 42005:2025.
+- ISO/IEC 42001:2023 remains the current edition of the AI management system standard (N1). EN ISO/IEC 42001:2026 is the European Committee for Standardization (CEN) adoption of the same 2023 text, not a revision. The companion impact assessment methodology is ISO/IEC 42005:2025.
 - NIST AI RMF (N2) refers to version 1.0 (January 2023) together with the Generative AI Profile (NIST AI 600-1, July 2024).
-- **Amendment note, 13 August 2026 (KST).** This entry previously recorded the Digital Omnibus on AI as awaiting publication and 2 August 2026 as the legally operative high-risk date. That is superseded. For organizations answering "Yes" to A4: The Digital Omnibus on AI amending Regulation (EU) 2024/1689 **entered into force on 27 July 2026**. It defers Annex III high-risk obligations to 2 December 2027 and Annex I embedded high-risk obligations to 2 August 2028. Article 50 transparency obligations apply from 2 August 2026 for providers and deployers, with one carve-out that matters where C13 or C14 puts the organization in the provider role: providers of generative systems placed on the market before 2 August 2026 have until 2 December 2026 to meet the Article 50(2) machine-readable marking duty (Recital 38; carve-out added 15 October 2026 (KST)). The canonical account-wide statement of the post-Omnibus timeline is the [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note) in ai-governance-for-boards, dated 15 October 2026 (KST), which governs where this entry and it differ. Article 5 sits in Chapter II and, under **Article 113, third paragraph, point (a)**, **applies from 2 February 2025**. **Carve-out, verified 13 August 2026 (KST):** Regulation (EU) 2026/1744 replaced Article 113, third paragraph, point (a), so Chapters I and II apply from 2 February 2025 **except** Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b), which apply from 2 December 2026. **Citation.** The amending act is **Regulation (EU) 2026/1744** of the European Parliament and of the Council of 8 July 2026, OJ L, 2026/1744, 24.7.2026, ELI http://data.europa.eu/eli/reg/2026/1744/oj, in force 27 July 2026. Its Article 1, point (40) amends the **third paragraph of Article 113** of Regulation (EU) 2024/1689. **Article 113 has unnumbered paragraphs with lettered points, so the correct pinpoint form is "Article 113, third paragraph, point (c)", not "Article 113(3)".** Amended point (c) provides that Chapter III, Sections 1, 2 and 3, with the exception of Article 6(5), apply from (i) 2 December 2027 for AI systems classified as high-risk pursuant to Article 6(2) and Annex III, and (ii) 2 August 2028 for those classified pursuant to Article 6(1) and Annex I. A new point (d) provides that Articles 102 to 110 apply from 27 July 2026. Read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex, as at 13 August 2026 (KST).
-- DPIA and data subject rights questions (Section D) use GDPR terminology. Equivalent triggers exist under other regimes (UK GDPR, US state privacy laws, Korea's PIPA); the drafts should localize per A3.
+
+**EU AI Act dates, for organizations answering "Yes" to A4.** The Digital Omnibus on AI, **Regulation (EU) 2026/1744** of the European Parliament and of the Council of 8 July 2026, OJ L, 2026/1744, 24.7.2026, ELI http://data.europa.eu/eli/reg/2026/1744/oj, amends Regulation (EU) 2024/1689 and **entered into force on 27 July 2026**. Its Article 1, point (40) amends the **third paragraph of Article 113** of Regulation (EU) 2024/1689. The canonical account-wide statement of the post-Omnibus timeline is the [EU AI Act currency note](https://github.com/rolldabones/ai-governance-for-boards/blob/main/05-jurisdictions/eu.md#eu-ai-act-currency-note) in ai-governance-for-boards, dated 15 October 2026 Korea Standard Time (KST), which governs where this entry and it differ.
+
+| Provision | Applies from | Pinpoint | As at (KST) |
+|---|---|---|---|
+| Chapters I and II, including Article 5 (prohibited practices) | 2 February 2025 | Article 113, third paragraph, point (a), as replaced by Regulation (EU) 2026/1744, Article 1, point (40)(a) | 13 August 2026 |
+| Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) | 2 December 2026 | Article 113, third paragraph, point (a), as replaced by Regulation (EU) 2026/1744, Article 1, point (40)(a) | 13 August 2026 |
+| Chapter V (general-purpose AI models), not changed by Regulation (EU) 2026/1744 | 2 August 2025 | Article 113, third paragraph, point (b) | 20 October 2026 |
+| Article 101 (fines for providers of general-purpose AI models) | 2 August 2026 | Article 113, second paragraph (Article 101 is excepted from point (b)) | 20 October 2026 |
+| Article 50 transparency obligations, providers and deployers | 2 August 2026 | Article 113, second paragraph | 20 October 2026 |
+| Article 50(2) machine-readable marking, for providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content that were placed on the market before 2 August 2026 (material where C13 or C14 puts the organization in the provider role) | 2 December 2026 | Article 111(4), inserted by Regulation (EU) 2026/1744, Article 1, point (39)(b); Recital 38 of that Regulation gives the reason | 20 October 2026 |
+| Articles 102 to 110 | 27 July 2026 | Article 113, third paragraph, point (d), added by Regulation (EU) 2026/1744, Article 1, point (40)(c) | 13 August 2026 |
+| Chapter III, Sections 1, 2 and 3, except Article 6(5): AI systems classified as high-risk pursuant to Article 6(2) and Annex III | 2 December 2027 | Article 113, third paragraph, point (c)(i), as replaced by Regulation (EU) 2026/1744, Article 1, point (40)(b) | 13 August 2026 |
+| Chapter III, Sections 1, 2 and 3, except Article 6(5): AI systems classified as high-risk pursuant to Article 6(1) and Annex I | 2 August 2028 | Article 113, third paragraph, point (c)(ii), as replaced by Regulation (EU) 2026/1744, Article 1, point (40)(b) | 13 August 2026 |
+
+**Article 113 has unnumbered paragraphs with lettered points, so the correct pinpoint form is "Article 113, third paragraph, point (c)", not "Article 113(3)".** Rows as at 13 August 2026 were read against the consolidated text of Regulation (EU) 2024/1689 on EUR-Lex; rows as at 20 October 2026 against the Official Journal texts of Regulations (EU) 2024/1689 and (EU) 2026/1744.
+
+- DPIA and data subject rights questions (Section D) use GDPR terminology. Equivalent triggers exist under other regimes (UK GDPR, US state privacy laws, Korea's Personal Information Protection Act (PIPA)); the drafts should localize per A3.
 - These questions name alignment targets for drafting purposes. They are not conformity claims. Verify current status before relying on any of them.
 
 ## Part of the ecosystem
