@@ -2,6 +2,11 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.4 - 2026-10-20
+
+- LICENSE: two defects against the Creative Commons legal code corrected (the space in 'ShareAlike. In'; the CC0 sentence of the closing notice). Operative terms unchanged.
+- README masthead, How to Cite and `CITATION.cff` to v1.2.4.
+
 ## v1.2.3 - 2026-10-18
 
 **Patch. Retirement residue, no change to the question set.** Session T4 of the whole-account review of 15 October 2026 (doc section 4; reviewer report 11, item A12). The AI GRC Spellbook Copilot custom GPT was retired on 1 October 2026 and converted to a private plug-in (determination D5); three sentences still sent the reader to it as a GPT.
