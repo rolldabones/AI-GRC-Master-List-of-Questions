@@ -2,6 +2,11 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.6 - 2026-11-02
+
+- `CITATION.cff` abstract: the sufficiency claim now carries the qualification README.md states ("subject to the two known gaps"), so the pair's front doors agree with the AI-GRC-Copilot's known defect K1; `rolldabones/ECOSYSTEM.md` and the GitHub description changed the same day. Found by the whole-account review of 24 October 2026 (reader report 04); train B, on Michael Paik's ruling of 2 November 2026.
+- README and `CITATION.cff` to v1.2.6. Prepared with Claude, approved by Michael Paik.
+
 ## v1.2.5 - 2026-10-20
 
 **Patch. Review corrections; the question set changes in wording and C2 is split.** Independent review of 20 October 2026; changes made with Claude, approved by Michael Paik. Dates are KST.
