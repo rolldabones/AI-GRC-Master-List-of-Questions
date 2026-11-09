@@ -2,6 +2,13 @@
 
 All notable changes to this repository. Versions apply to the repository as a whole; all files version in lockstep. Prior versions are superseded, never silently overwritten.
 
+## v1.2.7 - 2026-11-09
+
+Patch release. Train D of the improvement rotation (review of 24 October 2026). Prepared with Claude, approved by Michael Paik.
+
+- README, License: one line points to `rolldabones/LICENSING.md` (v1.0.0, new), which states once what the account's two licenses permit, that a Client's use in its own operations may fall outside NonCommercial, how to ask and why the two licenses do not mix.
+- README and `CITATION.cff` to v1.2.7; no other file changed.
+
 ## v1.2.6 - 2026-11-02
 
 - `CITATION.cff` abstract: the sufficiency claim now carries the qualification README.md states ("subject to the two known gaps"), so the pair's front doors agree with the AI-GRC-Copilot's known defect K1; `rolldabones/ECOSYSTEM.md` and the GitHub description changed the same day. Found by the whole-account review of 24 October 2026 (reader report 04); train B, on Michael Paik's ruling of 2 November 2026.
