@@ -1,6 +1,8 @@
 # AI GRC Master List of Minimum Questions
 
-**Version 1.2.7 · 9 November 2026**
+> **Archived edition of 26 November 2026.** This repository is archived and read-only. It receives no corrections, legal ones included: verify every statement of law, regulation or standard against a current primary source before you rely on it. What I maintain, and why this repository is not part of it, is in [DISPOSITION.md](https://github.com/rolldabones/rolldabones/blob/main/DISPOSITION.md). Cite this edition as *AI GRC Master List of Minimum Questions*, v1.2.8 (26 November 2026). The license and [LICENSING.md](https://github.com/rolldabones/rolldabones/blob/main/LICENSING.md) still apply. Reach me at sonupaik@gmail.com.
+
+**Version 1.2.8 · 26 November 2026 · Archived edition**
 
 This is a Master List of Minimum Questions whose answers give the [AI GRC Copilot](https://github.com/rolldabones/AI-GRC-Copilot) instructions, run on any current assistant, the inputs to draft the 30 canonical AI governance, risk management and compliance (GRC) artifact drafts (policy, charters, registers, standard operating procedures (SOPs), protocols, monitoring, incident, vendor, audit, training, ISO roadmap, regulatory playbook, continuous improvement), subject to the two known gaps stated below.
 
@@ -337,7 +339,7 @@ This repository is part of the [rolldabones governance ecosystem](https://github
 
 ## How to Cite
 
-> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
+> Paik, Son-U Michael. *AI GRC Master List of Minimum Questions*, v1.2.8. GRC Solutions Korea, 2026. https://github.com/rolldabones/AI-GRC-Master-List-of-Questions
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
